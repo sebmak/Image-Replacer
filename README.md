@@ -2,7 +2,7 @@
 
 ##Description
 
-Replaces images at defined breakpoints. A great way to add responsive loaded images to your site. Its small, ~600Bytes minified, and a little flexible flexible.
+Replaces images at defined breakpoints. A great way to add responsive loaded images to your site. Its small, ~900Bytes minified, and a little flexible flexible.
 
 ##Usage
 
