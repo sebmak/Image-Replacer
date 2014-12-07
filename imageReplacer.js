@@ -7,7 +7,6 @@
 				if(typeof opts[key].max !== 'undefined' && opts[key].max >= width){
 					return key;
 				}
-				return key;
 			} else if (typeof opts[key].max !== 'undefined' && opts[key].max >= width){
 				range = key;
 			}
