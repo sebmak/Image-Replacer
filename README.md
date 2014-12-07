@@ -1,5 +1,9 @@
 # jQuery Image Replacer
 
+##Description
+
+Replaces images at defined breakpoints. A great way to add responsive loaded images to your site. Its small, ~600Bytes minified, and a little flexible flexible.
+
 ##Usage
 
 ###Set your HTML
@@ -38,6 +42,18 @@
 		    default: 'xl'
 		}
 	)
+
+```
+
+##Further Usage
+
+###Run On Load
+
+Run the javascript on load to detect if already at a smaller size. Default = ``` true ```
+
+```javascript
+
+	$(window).imageResizer({onload:true})
 
 ```
 

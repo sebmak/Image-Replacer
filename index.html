@@ -12,12 +12,18 @@
           height: 100%;
           width: 100%;
       }
+      .box {
+        width: 100%;
+      }
     </style>
   </head>
   <body>
     <script>
     </script>
     <img src="images/test1.jpg" data-sm="images/testsm.jpg" data-md="images/testmd.jpg" data-lg="images/testlg.jpg" data-xl="images/test1.jpg" />
+    <div class="box">
+    <img src="images/test1.jpg" data-sm="images/testsm.jpg" data-md="images/testmd.jpg" data-lg="images/testlg.jpg" data-xl="images/test1.jpg" />
+    </div>
     <script type="text/javascript" src="imageReplacer.min.js"></script>
     <script type="text/javascript">
       $(window).imageReplacer();

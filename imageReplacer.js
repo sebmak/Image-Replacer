@@ -18,6 +18,24 @@
  		
     	var opts = $.extend( {}, $.fn.imageReplacer.defaults, options );
 
+    	//Replace Image On Load
+    	if(opts.onload){
+    		
+			var width = $(this).width();
+
+			var range = determineRange(width,opts);
+
+			if(activeType !== range){
+				activeType = range;
+				$('img').each(function(){
+					var data = $(this).data(activeType);
+					if(typeof data !== 'undefined'){
+						$(this).attr('src',data);
+					}
+				})
+			}
+    	}
+
 		var activeType = opts.default;
 
     	$(this).on('resize',function(){
@@ -52,7 +70,8 @@
 	    sm: {
 	    	max: 799
 	    },
-	    default: 'xl'
+	    default: 'xl',
+	    onload:true
 	};
  
 }( jQuery ));
